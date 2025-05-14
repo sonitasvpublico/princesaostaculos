@@ -4,8 +4,19 @@
     <link rel="icon" type="image/svg+xml" href="tienda-sonita.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Princess Runner 3D - Three.js</title> {/* Título cambiado */}
+    <title>Princess Sprint 3D</title> 
     <style>
+         #logo {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 100;
+     }
+
+     #logo img {
+        height: 40px; /* Puedes ajustar el tamaño */
+     }
+
         body { margin: 0; overflow: hidden; background-color: #ADD8E6; cursor: none; /* Ocultar cursor por defecto */ }
         canvas { display: block; }
         #info {
@@ -56,6 +67,9 @@
     </style>
 </head>
 <body>
+    <div id="logo">
+        <img src="tienda-sonita.svg" alt="Logo" />
+    </div>
     <div id="info">Score: 0</div>
     <div id="gameover">
         Game Over
